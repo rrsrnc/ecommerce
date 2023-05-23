@@ -1,0 +1,54 @@
+.header{
+    background-color: beige;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+  }
+
+  .homeicon{
+    margin-right: auto;
+    /* align-items: center; */
+  }
+
+  .hide{
+    display: none;
+  }
+
+
+  .carticon{
+    margin-left: auto;
+    /* align-items: center; */
+  }
+  .section{
+    display: -webkit-flex;
+    min-height: 100vh;
+    
+    
+  }
+
+  .search{
+    display: flex;
+  }
+  
+  .nav{
+    display: inline-block;
+    padding: 5px;
+    background-color: antiquewhite;
+    /* width: 25%; */
+  }
+  
+  .main{
+    flex-grow: 1;
+    padding: 5px;
+    background-color: aliceblue;
+    /* width: 100%; */
+  }
+  
+  .footer{
+    background-color: aqua;
+    padding: 5px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+  }

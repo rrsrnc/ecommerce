@@ -1,0 +1,124 @@
+{
+    "categories":[
+        {
+            "id":1,
+            "category":"Fridge"
+        },
+        {
+            "id":2,
+            "category":"Tv"
+        },
+        {
+            "id":3,
+            "category":"Books"
+        },
+        {
+            "id":4,
+            "category":"Accessories"
+        },
+        {
+            "id":5,
+            "category":"Mobile"
+        }
+    ],
+    "products":[
+        {
+            "id": 1,
+            "categoryId":1,
+            "name": "Lg 240L",
+            "price":23000,
+            "img":"/assets/lg 240l.jpg"
+          },
+        {
+            "id": 11,
+            "categoryId":1,
+            "name": "Samsung 236L",
+            "price":17000,
+            "img":"/assets/samsung 236l.jpg"
+          },
+        {
+            "id": 12,
+            "categoryId":1,
+            "name": "Whirpool 160L",
+            "price":25000,
+            "img":"/assets/whirpool 160l.jpg"
+          },
+          {
+            "id": 2,
+            "categoryId":3,
+            "name": " Game Of Thrones",
+            "img":"/assets/got.jpg",
+            "price":163
+          },
+          {
+            "id": 13,
+            "categoryId":3,
+            "name": " Principle Cruel",
+            "img":"/assets/principlecruel.jpg",
+            "price":260
+          },
+          {
+            "id": 14,
+            "categoryId":3,
+            "name": " Alchemist",
+            "img":"/assets/alchemist.jpg",
+            "price":163
+          },
+          {
+            "id": 3,
+            "categoryId":2,
+            "name": "Sony Bravia",
+            "img":"/assets/sony.jpg",
+            "price":45000
+          },
+          {
+            "id": 4,
+            "categoryId":5,
+            "name": "Mi 11X",
+            "img":"/assets/mi11x.jpg",
+            "price":22999
+          },
+          {
+            "id": 5,
+            "categoryId":5,
+            "name": "Iphone 13",
+            "img":"/assets/iphone-13.jpg",
+            "price":77000
+          },
+          {
+            "id": 6,
+            "categoryId":5,
+            "name": "Realme C33",
+            "img":"/assets/Realme C-33.jpg",
+            "price":10000
+          },
+          {
+            "id": 7,
+            "categoryId":5,
+            "name": "Iphone 14",
+            "img":"/assets/iphone-13.jpg",
+            "price":99000
+          },
+          {
+            "id": 8,
+            "categoryId":4,
+            "name": "Charger",
+            "img":"/assets/charger.jpg",
+            "price":1299
+          },
+          {
+            "id": 9,
+            "categoryId":4,
+            "name": "Earphone",
+            "img":"/assets/earphone.jpg",
+            "price":563
+          },
+          {
+            "id": 10,
+            "categoryId":4,
+            "name": "Speakers",
+            "img":"/assets/speakers.jpg",
+            "price":5450
+          }
+    ]
+}

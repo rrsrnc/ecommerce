@@ -1,0 +1,56 @@
+.product{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    /* flex: 1; */
+    display: inline-block;
+    /* width: 25%; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 4px;
+  }
+
+  .card:hover{
+    /* background-color: #c9eafa; */
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .card .btn {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 2px;
+    background-color: #c6ddf5;
+    color: #232121;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card .btn:hover {
+    background-color: #88c6f3;
+  }
+  
+  .card img{
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+  }
+
+  .details{
+    display: flex;
+  }

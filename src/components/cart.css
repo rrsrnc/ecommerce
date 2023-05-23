@@ -1,0 +1,42 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.col{
+    width: 33%;
+    text-align:left;
+}
+/* td{
+    width: 33.3%;
+} */
+tr {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .last-t {
+    border-bottom: none;
+    border-top: none;
+  }
+  
+
+  .quantity{
+    display: inline;
+  }
+  
+  .icons{
+    display: inline;
+    margin-left: auto;
+  }
+  
+  .icon{
+    margin-left: 5px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+  }
+
+  .icon:hover{
+    border: 1px solid black;
+    border-radius: 50%;
+  }

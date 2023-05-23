@@ -4,6 +4,9 @@ import Cart from "./cart";
 import { useContext } from 'react';
 import { CartContext } from '../context/cartContext';
 
+
+
+
 const Product=({product})=>{
     // console.log(product.name)
     const {addToCart}=useContext(CartContext);
@@ -25,7 +28,7 @@ const Product=({product})=>{
                         </div>
                     </h3>
                 
-                <img src={product.img}></img> 
+                <img src={`${process.env.PUBLIC_URL}${product.img}`}></img> 
                 </div>
                 
                 <button className="btn addToCart" onClick={()=>addToCart(product)}>

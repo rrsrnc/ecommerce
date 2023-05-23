@@ -29,7 +29,7 @@ const Layout=()=>{
              <>
             <header className='header'>
                 <Link className="homeicon" to={'/'}>
-                            <img src="/icons/home.png"></img>
+                            <img src={`${process.env.PUBLIC_URL}/icons/home.png`}></img>
                 </Link>
                 <span className="search">
                     <Search/>
@@ -38,7 +38,7 @@ const Layout=()=>{
                         <p>Ecommerce Website</p>
                 </span>
                 <Link className="carticon" to={'cart'}>
-                    <img src={image}>
+                    <img src={`${process.env.PUBLIC_URL}${image}`}>
 
                     </img>
                 </Link>

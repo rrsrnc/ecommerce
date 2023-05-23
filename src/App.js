@@ -15,7 +15,7 @@ function App(){
 
   return(
     <CartProvider>
-    <Router basename="/ecommerce/">
+    <Router basename="/ecommerce">
       <Routes>
         <Route path="/" element={<Layout/>}>
             <Route index="home" element={<Home />} />

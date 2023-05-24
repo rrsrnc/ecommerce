@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Signup() {
+  const navigate = useNavigate();
   const handleSignUp = async (e) => {
     e.preventDefault();
     const name = e.target[0].value;
@@ -31,6 +33,7 @@ export default function Signup() {
           // console.log(data.accessToken);
 
           localStorage.setItem("token", data.accessToken);
+          navigate(-1);
         })
         .catch((e) => {
           console.log(e);

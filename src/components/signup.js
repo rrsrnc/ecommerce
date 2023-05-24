@@ -33,7 +33,7 @@ export default function Signup() {
           // console.log(data.accessToken);
 
           localStorage.setItem("token", data.accessToken);
-          navigate(-1);
+          navigate('/');
         })
         .catch((e) => {
           console.log(e);

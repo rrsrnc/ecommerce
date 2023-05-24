@@ -10,9 +10,30 @@
     /* align-items: center; */
   }
 
-  .hide{
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d0e4fa;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e4ebf3;
+  }
+  
+  .hide {
     display: none;
   }
+  
+  .show {
+    display: inline-block;
+  }
+  
 
 
   .carticon{
@@ -40,7 +61,7 @@
   .main{
     flex-grow: 1;
     padding: 5px;
-    background-color: aliceblue;
+    /* background-color: rgb(247, 248, 249); */
     /* width: 100%; */
   }
   
@@ -52,3 +73,6 @@
     width: 100%;
     position: relative;
   }
+
+
+  

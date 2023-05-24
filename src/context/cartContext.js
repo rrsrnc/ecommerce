@@ -25,10 +25,18 @@ export const CartProvider = ({ children }) => {
     };
 
     const response = await fetch('https://backenedecommerce-rrsrnc.onrender.com/cart/products', requestOptions)
-    const data = await response.json()
-    // console.log(data.products)
+    console.log(response.status)
+    if(response.status !=501){
+      const data = await response.json()
+      cartItems = data.products
+    }
 
-    cartItems = data.products
+    else{
+      cartItems=[]
+    }
+    
+
+    
     return cartItems
 
   }

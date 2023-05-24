@@ -37,9 +37,9 @@ const Cart=({})=>{
                     <td>{item.name}</td>
                     <td><div className='quantity'>{item.quantity}</div>
                         <div className='icons'>
-                        <span><img className={'icon'} src='ecommerce/icons/plus.png' onClick={()=>increaseQuantity(pos)}/></span>
-                        <span><img className={'icon'} src='ecommerce/icons/minus.png' onClick={()=>decreaseQuantity(pos)}/></span>
-                        <span><img className={'icon'} src='ecommerce/icons/delete.png' onClick={()=>deleteItem(pos)}/></span>
+                        <span><img className={'icon'} src={`${process.env.PUBLIC_URL}/icons/plus.png`} onClick={()=>increaseQuantity(pos)}/></span>
+                        <span><img className={'icon'} src={`${process.env.PUBLIC_URL}/icons/minus.png`} onClick={()=>decreaseQuantity(pos)}/></span>
+                        <span><img className={'icon'} src={`${process.env.PUBLIC_URL}/icons/delete.png`} onClick={()=>deleteItem(pos)}/></span>
                         </div>
                     </td>
                     <td>{item.price*item.quantity}</td>

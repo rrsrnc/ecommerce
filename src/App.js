@@ -8,6 +8,7 @@ import CategoryProduct from "./components/categoryProduct";
 import { CartProvider } from './context/cartContext';
 import CheckOut from "./components/checkOut";
 import SearchResults from "./components/searchResults";
+import Signup from "./components/signup";
 
 
 
@@ -21,6 +22,7 @@ function App(){
             <Route index="home" element={<Home />} />
             <Route path="cart" element={<Cart />} />
             <Route path="login" element={<Login />} />
+            <Route path="signup" element={<Signup />} />
             <Route path="search" element={<SearchResults />} />
             <Route path="orderConfirmation" element={<CheckOut />} />
             <Route path="categories/:id" element={<CategoryProduct />} />

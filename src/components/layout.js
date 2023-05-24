@@ -42,11 +42,14 @@ const Layout=()=>{
 
                     </img>
                 </Link>
-                <Link className={`login ${accessToken?"hide":"show"}`}  to={'login'} >
+                <Link className={`btn ${accessToken?"hide":"show"}`}  to={'login'} >
                     login
                 </Link>
-                <Link className={`logout ${accessToken?"show":"hide"}`}  to={'/'} onClick={handleLogout}>
+                <Link className={`btn ${accessToken?"show":"hide"}`}  to={'/'} onClick={handleLogout}>
                     logout
+                </Link>
+                <Link className={`btn ${accessToken?"hide":"show"}`}  to={'signup'} onClick={handleLogout}>
+                    signup
                 </Link>
             </header>
             <section className='section'>

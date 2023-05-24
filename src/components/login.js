@@ -3,7 +3,7 @@ import Product from "./product";
 import { getAccessToken } from "../Fetcher";
 import { useContext } from "react";
 import { CartContext } from "../context/cartContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function Login() {
 
@@ -11,7 +11,7 @@ function Login() {
     const navigate = useNavigate()
     const handleSubmit = async (e) => {
         e.preventDefault()
-       //USer Login
+        //USer Login
         const email = e.target[0].value;
         const password = e.target[1].value
         const requestOptions = {
@@ -21,7 +21,7 @@ function Login() {
         };
 
         const response = await fetch('https://backenedecommerce-rrsrnc.onrender.com/auth/login', requestOptions);
-        if (response.status == 500) {
+        if (response.status == 401) {
             alert("Please use correct credentials")
         }
         const data = await response.json()
@@ -31,7 +31,8 @@ function Login() {
         if (data.accessToken) {
             // fetchUser()
             await fetchCart()
-            navigate('/')
+            navigate(-1)
+          
         }
 
     }
@@ -51,11 +52,20 @@ function Login() {
     return (
         <div>
             <form onSubmit={(e) => handleSubmit(e)}>
-                <input placeholder="email" />
-                <input placeholder="password" />
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+
+                <div className="mb-3">
+                    <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                        <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                    <input type="password" className="form-control" id="exampleInputPassword1"/>
+                </div>
+
+                <button type="submit" className="btn btn-primary">Submit</button>
+        </form>
+        </div >
     )
 }
 

@@ -1,4 +1,7 @@
+
 const baseUrl="https://backenedecommerce-rrsrnc.onrender.com"
+
+
 
 const fetcher=async(url)=>{
     let responseData={errMessage:"",data:[]}
@@ -22,6 +25,7 @@ export const getCategories=()=>{
     return fetcher("/home/categories")
 }    
 export const getCategoryProduct=(id)=>{
+   
     return fetcher(`/categories?id=${id}`)
 }    
 

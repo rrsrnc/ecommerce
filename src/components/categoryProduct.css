@@ -1,0 +1,7 @@
+.container{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto;
+    /* margin:0px; */
+    /* justify-content: space-around; */
+    width:100%;
+}

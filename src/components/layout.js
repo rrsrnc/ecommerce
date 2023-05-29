@@ -34,8 +34,8 @@ const Layout=()=>{
                 <span className="search">
                     <Search/>
                 </span>
-                <span>
-                        <p>Ecommerce Website</p>
+                <span className="title">
+                        Ecommerce Website
                 </span>
                 <Link className="carticon" to={'cart'}>
                     <img src={`${process.env.PUBLIC_URL}${image}`}>

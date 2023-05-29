@@ -1,6 +1,7 @@
 import React, { useEffect , useState } from "react"
 import Product from "./product";
 import fetcher from "../Fetcher";
+// import './categoryProduct.css'
 
 function Home(){
 
@@ -24,7 +25,7 @@ function Home(){
                     <div>
                         All Products
                     </div>
-                    <div>
+                    <div className="container">
                     {items.data.map((item)=>(
                             <Product key={item._id} product={item}/>
                         ))}

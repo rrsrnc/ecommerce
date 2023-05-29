@@ -1,13 +1,18 @@
 .header{
-    background-color: beige;
-    padding: 5px;
+    background-color: rgb(119, 102, 242);
+    /* padding: 5px; */
     display: flex;
     text-align: center;
+    box-shadow: 0px 2px 5px .02px rgb(72, 71, 71) ;
+    color: white;
   }
 
   .homeicon{
     margin-right: auto;
     /* align-items: center; */
+  }
+  .title{
+    margin-top: 10px;
   }
 
   .btn {
@@ -38,8 +43,22 @@
 
   .carticon{
     margin-left: auto;
+    
     /* align-items: center; */
   }
+  .carticon img{
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    filter: invert(100%);
+  }
+  .homeicon img{
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    filter: invert(100%);
+  }
+
   .section{
     display: -webkit-flex;
     min-height: 100vh;
@@ -53,7 +72,7 @@
   
   .nav{
     display: inline-block;
-    padding: 5px;
+    /* padding: 5px; */
     background-color: antiquewhite;
     /* width: 25%; */
   }

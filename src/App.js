@@ -9,7 +9,13 @@ import { CartProvider } from './context/cartContext';
 import CheckOut from "./components/checkOut";
 import SearchResults from "./components/searchResults";
 import Signup from "./components/signup";
+import { io } from "socket.io-client";
 
+// const socket=io('http://localhost:5000/')
+// socket.on('msg',(msg)=>{
+//   console.log(msg.message[0].products)
+// })
+// socket.emit("data",{data:[1,2,3,4,5,55555]})
 
 
 function App(){

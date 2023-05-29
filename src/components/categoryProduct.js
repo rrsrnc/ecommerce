@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import Product from "./product";
 import { getCategoryProduct, getProducts } from '../Fetcher';
 import './product.css'
+// import './categoryProduct.css'
 
 
 const CategoryProduct=()=>{
@@ -40,7 +41,7 @@ const CategoryProduct=()=>{
     }  
 
     return(
-        <div className="product">
+        <div className="container">
             {
                 displayProduct()
             }
